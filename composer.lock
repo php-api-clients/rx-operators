@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "72e92610fd43dda68dd72a928922ac80",
-    "content-hash": "a5817a21547f568ba5dea17c27f878ed",
+    "hash": "016ea3c55b430bd04f2a7eebcea4b459",
+    "content-hash": "f07ccf331320608a4884ecc2f72cd62b",
     "packages": [
         {
             "name": "reactivex/rxphp",
@@ -74,6 +74,53 @@
                 "source": "https://github.com/mbonneau/RxPHP/tree/custom_operators"
             },
             "time": "2016-10-11 20:57:12"
+        },
+        {
+            "name": "rx/operator-extras",
+            "version": "0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RxPHP/RxOperatorExtras.git",
+                "reference": "851febebd3558350c55dcfecb8fd7df05b6dd88d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RxPHP/RxOperatorExtras/zipball/851febebd3558350c55dcfecb8fd7df05b6dd88d",
+                "reference": "851febebd3558350c55dcfecb8fd7df05b6dd88d",
+                "shasum": ""
+            },
+            "require": {
+                "reactivex/rxphp": "^1.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Rx\\Extra\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matt Bonneau",
+                    "email": "matt@bonneau.net",
+                    "role": "Developer"
+                },
+                {
+                    "name": "David Dan",
+                    "email": "davidwdan@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Extra Operators and Observables for RxPHP",
+            "keywords": [
+                "reactivex",
+                "rx.php",
+                "rxphp"
+            ],
+            "time": "2016-05-21 02:51:35"
         }
     ],
     "packages-dev": [
@@ -2405,7 +2452,14 @@
             "time": "2016-08-09 15:02:57"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "1.4.0",
+            "alias_normalized": "1.4.0.0",
+            "version": "dev-custom_operators",
+            "package": "reactivex/rxphp"
+        }
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
         "reactivex/rxphp": 20,
@@ -2413,6 +2467,8 @@
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": "^7.0"
+    },
     "platform-dev": []
 }
