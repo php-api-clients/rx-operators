@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace ApiClients\Rx\Operator;
 
@@ -8,7 +8,7 @@ use Rx\ObserverInterface;
 use Rx\Operator\OperatorInterface;
 use Rx\SchedulerInterface;
 
-class JsonDecodeOperator implements OperatorInterface
+final class JsonDecodeOperator implements OperatorInterface
 {
     /**
      * @inheritDoc
