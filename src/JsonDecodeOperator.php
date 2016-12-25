@@ -1,6 +1,6 @@
 <?php
 
-namespace Rx\Custom\Operator;
+namespace ApiClients\Rx\Operator;
 
 use Rx\ObservableInterface;
 use Rx\Observer\CallbackObserver;
@@ -21,7 +21,9 @@ class JsonDecodeOperator implements OperatorInterface
         return $observable->subscribe(new CallbackObserver(
             function (string $json) use ($observer) {
                 $observer->onNext(json_decode($json, true));
-            }
+            },
+            [$observer, 'onError'],
+            [$observer, 'onCompleted']
         ));
     }
 }
