@@ -4,21 +4,107 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a2f9bb7e219fe5e58bc3ea532a428ea4",
-    "content-hash": "f07ccf331320608a4884ecc2f72cd62b",
+    "hash": "09999dd2d033f056eabc5d11d3aade24",
+    "content-hash": "94a4e11a58529b69843077dad8f67741",
     "packages": [
         {
-            "name": "reactivex/rxphp",
-            "version": "dev-custom_operators",
+            "name": "api-clients/rx",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mbonneau/RxPHP.git",
-                "reference": "7d977bf80f860799afa37cd8481ba8bc1b16a179"
+                "url": "https://github.com/php-api-clients/rx.git",
+                "reference": "d9bf066f439dcb7673c567381b9a7d13ac7ec14f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mbonneau/RxPHP/zipball/7d977bf80f860799afa37cd8481ba8bc1b16a179",
-                "reference": "7d977bf80f860799afa37cd8481ba8bc1b16a179",
+                "url": "https://api.github.com/repos/php-api-clients/rx/zipball/d9bf066f439dcb7673c567381b9a7d13ac7ec14f",
+                "reference": "d9bf066f439dcb7673c567381b9a7d13ac7ec14f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0",
+                "react/promise": "^2.4",
+                "reactivex/rxphp": "dev-master#c7d351d579f90134eef3701d87eb1ea8cd1e072e"
+            },
+            "require-dev": {
+                "api-clients/test-utilities": "^2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ApiClients\\Tools\\Rx\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "ceesjank@gmail.com"
+                }
+            ],
+            "time": "2016-12-25 11:23:34"
+        },
+        {
+            "name": "react/promise",
+            "version": "v2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/promise.git",
+                "reference": "2760f3898b7e931aa71153852dcd48a75c9b95db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reactphp/promise/zipball/2760f3898b7e931aa71153852dcd48a75c9b95db",
+                "reference": "2760f3898b7e931aa71153852dcd48a75c9b95db",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "React\\Promise\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Sorgalla",
+                    "email": "jsorgalla@gmail.com"
+                }
+            ],
+            "description": "A lightweight implementation of CommonJS Promises/A for PHP",
+            "keywords": [
+                "promise",
+                "promises"
+            ],
+            "time": "2016-12-22 14:09:01"
+        },
+        {
+            "name": "reactivex/rxphp",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ReactiveX/RxPHP.git",
+                "reference": "c7d351d579f90134eef3701d87eb1ea8cd1e072e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ReactiveX/RxPHP/zipball/c7d351d579f90134eef3701d87eb1ea8cd1e072e",
+                "reference": "c7d351d579f90134eef3701d87eb1ea8cd1e072e",
                 "shasum": ""
             },
             "require": {
@@ -46,6 +132,7 @@
                     "Rx\\": "lib/Rx"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -70,10 +157,7 @@
                 "reactive",
                 "rx"
             ],
-            "support": {
-                "source": "https://github.com/mbonneau/RxPHP/tree/custom_operators"
-            },
-            "time": "2016-10-11 20:57:12"
+            "time": "2016-12-24 23:43:32"
         },
         {
             "name": "rx/operator-extras",
@@ -713,16 +797,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "4.0.3",
+            "version": "4.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "903fd6318d0a90b4770a009ff73e4a4e9c437929"
+                "reference": "c14196e64a78570034afd0b7a9f3757ba71c2a0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/903fd6318d0a90b4770a009ff73e4a4e9c437929",
-                "reference": "903fd6318d0a90b4770a009ff73e4a4e9c437929",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/c14196e64a78570034afd0b7a9f3757ba71c2a0a",
+                "reference": "c14196e64a78570034afd0b7a9f3757ba71c2a0a",
                 "shasum": ""
             },
             "require": {
@@ -772,7 +856,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-11-28 16:00:31"
+            "time": "2016-12-20 15:22:42"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -1139,50 +1223,6 @@
                 "event-loop"
             ],
             "time": "2016-03-08 02:09:32"
-        },
-        {
-            "name": "react/promise",
-            "version": "v2.4.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/reactphp/promise.git",
-                "reference": "8025426794f1944de806618671d4fa476dc7626f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/promise/zipball/8025426794f1944de806618671d4fa476dc7626f",
-                "reference": "8025426794f1944de806618671d4fa476dc7626f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "React\\Promise\\": "src/"
-                },
-                "files": [
-                    "src/functions_include.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jan Sorgalla",
-                    "email": "jsorgalla@gmail.com"
-                }
-            ],
-            "description": "A lightweight implementation of CommonJS Promises/A for PHP",
-            "time": "2016-05-03 17:50:52"
         },
         {
             "name": "react/promise-timer",
@@ -1931,17 +1971,10 @@
             "time": "2016-11-23 20:04:58"
         }
     ],
-    "aliases": [
-        {
-            "alias": "1.4.0",
-            "alias_normalized": "1.4.0.0",
-            "version": "dev-custom_operators",
-            "package": "reactivex/rxphp"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "reactivex/rxphp": 20,
+        "api-clients/rx": 20,
         "api-clients/test-utilities": 20
     },
     "prefer-stable": true,
