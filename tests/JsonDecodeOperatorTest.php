@@ -23,9 +23,7 @@ final class JsonDecodeOperatorTest extends TestCase
 
         $operator = new JsonDecodeOperator();
 
-        $string = '{"foo":"bar"}';
-
-        $observable = Promise::toObservable(resolve($string));
+        $observable = Promise::toObservable(resolve('{"foo":"bar"}'));
 
         $operator($observable, $observer->reveal());
     }
