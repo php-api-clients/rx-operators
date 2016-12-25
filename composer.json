@@ -19,12 +19,12 @@
   },
   "autoload": {
     "psr-4": {
-      "AppiClients\\Rx\\Operator\\": "src/"
+      "ApiClients\\Rx\\Operator\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "AppiClients\\Rx\\Tests\\Operator\\": "tests/"
+      "ApiClients\\Rx\\Tests\\Operator\\": "tests/"
     }
   },
   "config": {
