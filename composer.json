@@ -11,8 +11,8 @@
   ],
   "require": {
     "php": "^7.0",
-    "api-clients/rx": "dev-master",
-    "rx/operator-extras": "^0.3.0"
+    "api-clients/rx": "dev-rxphp-2.0",
+    "rx/operator-extras": "2.0.x-dev"
   },
   "require-dev": {
     "api-clients/test-utilities": "dev-master"
