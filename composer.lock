@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1e4a3759de55b719100a7ba6117b6998",
+    "content-hash": "7d2dd2050576ddfe536c6fed9e240acb",
     "packages": [
         {
             "name": "api-clients/rx",
@@ -12,21 +12,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-api-clients/rx.git",
-                "reference": "64a9a9e607eaba336f217f86e6e90d2f1f946d5a"
+                "reference": "7c24b992858fcfa12d8bb25336acff0036b9d499"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-api-clients/rx/zipball/64a9a9e607eaba336f217f86e6e90d2f1f946d5a",
-                "reference": "64a9a9e607eaba336f217f86e6e90d2f1f946d5a",
+                "url": "https://api.github.com/repos/php-api-clients/rx/zipball/7c24b992858fcfa12d8bb25336acff0036b9d499",
+                "reference": "7c24b992858fcfa12d8bb25336acff0036b9d499",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.0",
                 "react/promise": "^2.4",
-                "reactivex/rxphp": "2.x-dev"
+                "reactivex/rxphp": "^2.0"
             },
             "require-dev": {
-                "api-clients/test-utilities": "^2.0"
+                "api-clients/test-utilities": "^3.0.1"
             },
             "type": "library",
             "autoload": {
@@ -48,7 +48,7 @@
                     "email": "ceesjank@gmail.com"
                 }
             ],
-            "time": "2017-03-14 22:18:29"
+            "time": "2017-03-21 16:19:27"
         },
         {
             "name": "async-interop/event-loop",
@@ -201,7 +201,7 @@
         },
         {
             "name": "rx/operator-extras",
-            "version": "2.0.x-dev",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RxPHP/RxOperatorExtras.git",
@@ -246,7 +246,7 @@
                 "rx.php",
                 "rxphp"
             ],
-            "time": "2017-01-05 19:39:01"
+            "time": "2017-01-05T19:39:01+00:00"
         }
     ],
     "packages-dev": [
@@ -1965,8 +1965,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "api-clients/rx": 20,
-        "rx/operator-extras": 20
+        "api-clients/rx": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
