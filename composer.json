@@ -9,7 +9,7 @@
   ],
   "require": {
     "php": "^7.0",
-    "api-clients/rx": "dev-rxphp-2.0",
+    "api-clients/rx": "^2.0",
     "rx/operator-extras": "^2.0"
   },
   "require-dev": {
