@@ -16,10 +16,8 @@ composer require api-clients/rx-operators
 ```
 # Usage
 
-Decoding:
+Decoding JSON:
 ```php
-use function ApiClients\Tools\Rx\unwrapObservableFromPromise;
-
 $observable = Observable::fromArray(['{"foo":"bar"}']);
 $promise = resolve($observable);
 
@@ -34,10 +32,8 @@ $observable->_ApiClients_jsonDecode()->subscribe(function ($d) {
 });
 ```
 
-Encoding:
+Encoding JSON:
 ```php
-use function ApiClients\Tools\Rx\unwrapObservableFromPromise;
-
 $observable = Observable::fromArray([[
     'foo' => 'bar',
 ]]);
