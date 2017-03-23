@@ -9,8 +9,8 @@
   ],
   "require": {
     "php": "^7.0",
-    "api-clients/rx": "^1.0",
-    "rx/operator-extras": "^0.3.0"
+    "api-clients/rx": "^2.0",
+    "rx/operator-extras": "^2.0"
   },
   "require-dev": {
     "api-clients/test-utilities": "^3.0.1"

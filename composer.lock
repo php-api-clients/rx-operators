@@ -4,29 +4,29 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "dbc8439d62d072585fa650b88d89347a",
+    "content-hash": "4b98dc97fe1efb1bd9044308a615da69",
     "packages": [
         {
             "name": "api-clients/rx",
-            "version": "1.0.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-api-clients/rx.git",
-                "reference": "7f5d1b8596304b10f12deae46ed015b8513ff20f"
+                "reference": "baadcfcc2f088423bce8ee66f1d46cdeac1192b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-api-clients/rx/zipball/7f5d1b8596304b10f12deae46ed015b8513ff20f",
-                "reference": "7f5d1b8596304b10f12deae46ed015b8513ff20f",
+                "url": "https://api.github.com/repos/php-api-clients/rx/zipball/baadcfcc2f088423bce8ee66f1d46cdeac1192b6",
+                "reference": "baadcfcc2f088423bce8ee66f1d46cdeac1192b6",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.0",
                 "react/promise": "^2.4",
-                "reactivex/rxphp": "^1.5"
+                "reactivex/rxphp": "^2.0"
             },
             "require-dev": {
-                "api-clients/test-utilities": "^2.0"
+                "api-clients/test-utilities": "^3.0.1"
             },
             "type": "library",
             "autoload": {
@@ -34,7 +34,8 @@
                     "ApiClients\\Tools\\Rx\\": "src/"
                 },
                 "files": [
-                    "src/functions_include.php"
+                    "src/functions_include.php",
+                    "src/bootstrap.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -47,7 +48,7 @@
                     "email": "ceesjank@gmail.com"
                 }
             ],
-            "time": "2017-03-22T20:22:07+00:00"
+            "time": "2017-03-22T20:37:41+00:00"
         },
         {
             "name": "react/promise",
@@ -94,41 +95,40 @@
         },
         {
             "name": "reactivex/rxphp",
-            "version": "1.5.3",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ReactiveX/RxPHP.git",
-                "reference": "31f36d69cf9ab121eff726fc0d003b2ccfc3ab16"
+                "reference": "4ad811032428074485d7ca99b779aec54b242982"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ReactiveX/RxPHP/zipball/31f36d69cf9ab121eff726fc0d003b2ccfc3ab16",
-                "reference": "31f36d69cf9ab121eff726fc0d003b2ccfc3ab16",
+                "url": "https://api.github.com/repos/ReactiveX/RxPHP/zipball/4ad811032428074485d7ca99b779aec54b242982",
+                "reference": "4ad811032428074485d7ca99b779aec54b242982",
                 "shasum": ""
             },
             "require": {
-                "php": "~5.5|~7.0"
+                "php": "~7.0",
+                "react/promise": "~2.2"
             },
             "require-dev": {
                 "phpunit/phpcov": "^3.1",
                 "phpunit/phpunit": "^5.5",
-                "react/event-loop": "~0.4.1",
-                "react/promise": "~2.2",
+                "react/event-loop": "^0.4.2",
                 "satooshi/php-coveralls": "~1.0"
             },
             "suggest": {
-                "react/event-loop": "For using event-loop based scheduling.",
-                "react/promise": "For converting promises to and from observables."
+                "react/event-loop": "Used for scheduling async operations"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4-dev"
+                    "dev-master": "2.0-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Rx\\": "lib/Rx"
+                    "Rx\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -156,29 +156,30 @@
                 "reactive",
                 "rx"
             ],
-            "time": "2017-03-14T21:00:10+00:00"
+            "time": "2017-03-21T13:29:22+00:00"
         },
         {
             "name": "rx/operator-extras",
-            "version": "0.3.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RxPHP/RxOperatorExtras.git",
-                "reference": "851febebd3558350c55dcfecb8fd7df05b6dd88d"
+                "reference": "3ccbd8dfb414ffe2c86199a98361903d383b9072"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RxPHP/RxOperatorExtras/zipball/851febebd3558350c55dcfecb8fd7df05b6dd88d",
-                "reference": "851febebd3558350c55dcfecb8fd7df05b6dd88d",
+                "url": "https://api.github.com/repos/RxPHP/RxOperatorExtras/zipball/3ccbd8dfb414ffe2c86199a98361903d383b9072",
+                "reference": "3ccbd8dfb414ffe2c86199a98361903d383b9072",
                 "shasum": ""
             },
             "require": {
-                "reactivex/rxphp": "^1.0.0"
+                "php": "^7.0",
+                "reactivex/rxphp": "^2.0"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Rx\\Extra\\": "src/"
+                    "Rx\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -203,7 +204,7 @@
                 "rx.php",
                 "rxphp"
             ],
-            "time": "2016-05-21T02:51:35+00:00"
+            "time": "2017-03-21T17:25:58+00:00"
         }
     ],
     "packages-dev": [

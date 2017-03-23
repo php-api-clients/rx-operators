@@ -29,7 +29,7 @@ $promise = resolve($observable);
  *   'foo' => 'bar',
  * ]
  */
-$observable->_ApiClients_jsonDecode()->subscribeCallback(function ($d) {
+$observable->_ApiClients_jsonDecode()->subscribe(function ($d) {
     var_export($d);
 });
 ```
@@ -47,7 +47,7 @@ $promise = resolve($observable);
  * Will encode into:
  * {"foo":"bar"}
  */
-$observable->_ApiClients_jsonEncode()->subscribeCallback(function ($d) {
+$observable->_ApiClients_jsonEncode()->subscribe(function ($d) {
     echo $d;
 });
 ```
