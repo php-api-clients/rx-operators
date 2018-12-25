@@ -2,18 +2,21 @@
 
 namespace ApiClients\Rx\Tests\Operator;
 
-use Exception;
 use ApiClients\Rx\Operator\JsonDecodeOperator;
 use ApiClients\Tools\TestUtilities\TestCase;
+use Exception;
 use Prophecy\Argument;
 use Rx\ObserverInterface;
 use Rx\React\Promise;
 use function React\Promise\reject;
 use function React\Promise\resolve;
 
+/**
+ * @internal
+ */
 final class JsonDecodeOperatorTest extends TestCase
 {
-    public function testDecode()
+    public function testDecode(): void
     {
         $observer = $this->prophesize(ObserverInterface::class);
         $observer->onNext(Argument::exact([
@@ -28,7 +31,7 @@ final class JsonDecodeOperatorTest extends TestCase
         $operator($observable, $observer->reveal());
     }
 
-    public function testError()
+    public function testError(): void
     {
         $exception = new Exception('foo.bar');
         $observer = $this->prophesize(ObserverInterface::class);

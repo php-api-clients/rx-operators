@@ -11,9 +11,12 @@ use Rx\React\Promise;
 use function React\Promise\reject;
 use function React\Promise\resolve;
 
+/**
+ * @internal
+ */
 final class JsonEncodeOperatorTest extends TestCase
 {
-    public function testDecode()
+    public function testDecode(): void
     {
         $observer = $this->prophesize(ObserverInterface::class);
         $observer->onNext(Argument::exact('{"foo":"bar"}'))->shouldBeCalled();
@@ -28,7 +31,7 @@ final class JsonEncodeOperatorTest extends TestCase
         $operator($observable, $observer->reveal());
     }
 
-    public function testError()
+    public function testError(): void
     {
         $exception = new Exception('foo.bar');
         $observer = $this->prophesize(ObserverInterface::class);

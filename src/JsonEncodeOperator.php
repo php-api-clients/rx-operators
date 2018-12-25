@@ -17,8 +17,8 @@ final class JsonEncodeOperator implements OperatorInterface
         ObserverInterface $observer
     ): DisposableInterface {
         return $observable->subscribe(
-            function (array $json) use ($observer) {
-                $observer->onNext(json_encode($json));
+            function (array $json) use ($observer): void {
+                $observer->onNext(\json_encode($json));
             },
             [$observer, 'onError'],
             [$observer, 'onCompleted']

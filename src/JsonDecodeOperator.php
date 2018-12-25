@@ -17,8 +17,8 @@ final class JsonDecodeOperator implements OperatorInterface
         ObserverInterface $observer
     ): DisposableInterface {
         return $observable->subscribe(
-            function (string $json) use ($observer) {
-                $observer->onNext(json_decode($json, true));
+            function (string $json) use ($observer): void {
+                $observer->onNext(\json_decode($json, true));
             },
             [$observer, 'onError'],
             [$observer, 'onCompleted']
