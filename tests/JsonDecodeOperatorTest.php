@@ -6,10 +6,10 @@ use ApiClients\Rx\Operator\JsonDecodeOperator;
 use ApiClients\Tools\TestUtilities\TestCase;
 use Exception;
 use Prophecy\Argument;
-use Rx\ObserverInterface;
-use Rx\React\Promise;
 use function React\Promise\reject;
 use function React\Promise\resolve;
+use Rx\ObserverInterface;
+use Rx\React\Promise;
 
 /**
  * @internal
